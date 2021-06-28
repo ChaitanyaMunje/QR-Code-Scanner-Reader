@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".QRCodeScanner">
+
+    <eu.livotov.labs.android.camview.ScannerLiveView
+        android:id="@+id/camview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--TextView to display the scanned data-->
+    <TextView
+        android:id="@+id/idTVscanned"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Scanned Data will appear here"
+        android:layout_height="wrap_content"
+        android:background="@color/black_shade_1"
+        android:padding="10dp"
+        android:textColor="@color/yellow" />
+</FrameLayout>
